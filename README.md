@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Fraud Detection Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based application for detecting fraudulent transactions by analyzing node interactions. It identifies suspicious transactions, detects fraud cycles, and calculates shortest paths using Dijkstra's algorithm with an interactive UI.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Transactions**: Input transactions between nodes with specified amounts using form fields.
+- **Suspicious Transaction Detection**: Automatically flags transactions exceeding ₹10,000.
+- **Cycle Detection**: Identifies looping transactions that may indicate fraud.
+- **Shortest Path Calculation**: Implements Dijkstra's algorithm to find optimal paths between nodes.
 
-### `npm start`
+### Transaction Management
+1. Enter **From Node**, **To Node**, and **Amount** in input fields.
+2. Click _Add Transaction_ to update the graph.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Fraud Detection Features
+- **Suspicious Transactions**: Displayed in red with 🚩 icon when amount > ₹10,000.
+- **Cycle Detection**: Shows warning message ⚠️ when loops are identified.
+- **Path Analysis**:
+  - Enter source node ➡ Click _Analyze_.
+  - Displays shortest paths in the format:
+    ```
+    Node X: ₹Amount
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Frontend**: React JS
+- **Styling**: CSS Modules
+- **Algorithms**:
+  - Dijkstra's shortest path
+  - Depth-First Search for cycle detection
