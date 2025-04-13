@@ -1,38 +1,82 @@
 .App {
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  color: #2c3e50;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-section input {
+  padding: 10px;
+  margin: 8px;
+  width: 150px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-section input:focus {
+  border-color: #0077cc;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 12px 20px;
+  margin: 8px;
+  background-color: #0077cc;
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background-color: #004a82;
+  transform: translateY(0);
+}
+
+.edge-list, .suspicious, .distances, .cycle-alert {
+  margin-top: 2rem;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.cycle-alert {
+  color: #e74c3c;
+  font-weight: bold;
+  background-color: #fdecea;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
