@@ -1,0 +1,15 @@
+[
+    { "from": 1, "to": 2, "amountTransferred": 1200 },
+    { "from": 2, "to": 3, "amountTransferred": 500 },
+    { "from": 3, "to": 4, "amountTransferred": 200 },
+    { "from": 1, "to": 4, "amountTransferred": 3000 },
+    { "from": 4, "to": 5, "amountTransferred": 1500 },
+    { "from": 5, "to": 6, "amountTransferred": 600 },
+    { "from": 6, "to": 7, "amountTransferred": 700 },
+    { "from": 7, "to": 1, "amountTransferred": 900 },
+    { "from": 8, "to": 9, "amountTransferred": 100 },
+    { "from": 9, "to": 8, "amountTransferred": 100 },
+    { "from": 10, "to": 11, "amountTransferred": 4500 },
+    { "from": 11, "to": 12, "amountTransferred": 4500 },
+    { "from": 12, "to": 10, "amountTransferred": 4500 }
+  ]

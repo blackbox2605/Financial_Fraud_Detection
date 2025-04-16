@@ -1,0 +1,31 @@
+.graph-container {
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .graph-svg {
+    width: 100%;
+    height: 500px;
+    background-color: #f4f4f4;
+  }
+  
+  .link {
+    stroke: #999;
+    stroke-opacity: 0.6;
+  }
+  
+  .node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .edge-label {
+    pointer-events: none;
+  }
+  
